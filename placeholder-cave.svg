@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 140" width="260" height="140" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="caveSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f3"/>
+      <stop offset="60%" stop-color="#fadce0"/>
+      <stop offset="100%" stop-color="#e8b8c8"/>
+    </linearGradient>
+    <radialGradient id="capPink" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbd7df"/>
+      <stop offset="100%" stop-color="#e08fa5"/>
+    </radialGradient>
+    <radialGradient id="capCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c47a"/>
+      <stop offset="100%" stop-color="#c47a5a"/>
+    </radialGradient>
+  </defs>
+  <rect width="260" height="140" fill="url(#caveSky)"/>
+
+  <!-- distant mountains -->
+  <path d="M0,95 L40,72 L80,90 L130,62 L180,84 L230,72 L260,82 L260,140 L0,140 Z" fill="#d99bb0" opacity="0.45"/>
+  <path d="M0,108 L50,88 L90,104 L140,80 L190,98 L240,90 L260,96 L260,140 L0,140 Z" fill="#c47a96" opacity="0.50"/>
+
+  <!-- branches -->
+  <path d="M-10,38 Q60,22 130,42 Q200,62 270,42" stroke="#7a4d3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M40,38 Q44,55 36,72" stroke="#7a4d3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M195,42 Q205,58 218,74" stroke="#7a4d3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <g id="cb">
+    <circle cx="0" cy="-7" r="5" fill="url(#capPink)"/>
+    <circle cx="6.7" cy="-2" r="5" fill="url(#capPink)"/>
+    <circle cx="4.3" cy="6" r="5" fill="url(#capPink)"/>
+    <circle cx="-4.3" cy="6" r="5" fill="url(#capPink)"/>
+    <circle cx="-6.7" cy="-2" r="5" fill="url(#capPink)"/>
+    <circle cx="0" cy="0" r="2" fill="url(#capCenter)"/>
+  </g>
+  <use href="#cb" transform="translate(20,40)"/>
+  <use href="#cb" transform="translate(58,32) scale(1.15)"/>
+  <use href="#cb" transform="translate(95,42) scale(0.9)"/>
+  <use href="#cb" transform="translate(132,30) scale(1.1)"/>
+  <use href="#cb" transform="translate(168,40) scale(0.95)"/>
+  <use href="#cb" transform="translate(215,32) scale(1.08)"/>
+  <use href="#cb" transform="translate(248,42) scale(0.85)"/>
+  <use href="#cb" transform="translate(36,72) scale(0.85)"/>
+  <use href="#cb" transform="translate(218,75) scale(0.95)"/>
+
+  <!-- drifting petals -->
+  <ellipse cx="60" cy="100" rx="3.5" ry="6" fill="#fbd7df" opacity="0.8" transform="rotate(35 60 100)"/>
+  <ellipse cx="160" cy="115" rx="3" ry="5.5" fill="#f5b4c0" opacity="0.7" transform="rotate(-22 160 115)"/>
+  <ellipse cx="220" cy="105" rx="3.5" ry="6" fill="#fbd7df" opacity="0.75" transform="rotate(58 220 105)"/>
+  <ellipse cx="115" cy="125" rx="3" ry="5" fill="#f5b4c0" opacity="0.55" transform="rotate(-40 115 125)"/>
+</svg>

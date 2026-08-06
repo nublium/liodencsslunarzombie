@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 140" width="260" height="140" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="unsortSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="55%" stop-color="#fbe1ea"/>
+      <stop offset="100%" stop-color="#dec0a8"/>
+    </linearGradient>
+    <radialGradient id="unsortBloom" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbd7df"/>
+      <stop offset="100%" stop-color="#e08fa5"/>
+    </radialGradient>
+    <radialGradient id="unsortCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c47a"/>
+      <stop offset="100%" stop-color="#b86a4a"/>
+    </radialGradient>
+  </defs>
+  <rect width="260" height="140" fill="url(#unsortSky)"/>
+
+  <!-- ground -->
+  <path d="M0,110 L80,98 L160,108 L260,100 L260,140 L0,140 Z" fill="#b88a72" opacity="0.55"/>
+
+  <!-- baskets / "unsorted" scattered footprints -->
+  <g fill="#7a4d3a" opacity="0.75">
+    <ellipse cx="50" cy="115" rx="18" ry="5"/>
+    <ellipse cx="115" cy="118" rx="22" ry="6"/>
+    <ellipse cx="190" cy="115" rx="18" ry="5"/>
+  </g>
+  <g stroke="#7a4d3a" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M36,115 Q50,108 64,115"/>
+    <path d="M40,118 Q50,113 60,118"/>
+    <path d="M95,118 Q115,108 135,118"/>
+    <path d="M99,121 Q115,114 131,121"/>
+    <path d="M176,115 Q190,108 204,115"/>
+    <path d="M180,118 Q190,113 200,118"/>
+  </g>
+
+  <!-- scattered question-style ornaments above baskets -->
+  <text x="50" y="98" text-anchor="middle"
+        font-family="serif" font-style="italic" font-size="16"
+        fill="#a85070" opacity="0.75">?</text>
+  <text x="115" y="100" text-anchor="middle"
+        font-family="serif" font-style="italic" font-size="18"
+        fill="#a85070" opacity="0.85">?</text>
+  <text x="190" y="98" text-anchor="middle"
+        font-family="serif" font-style="italic" font-size="16"
+        fill="#a85070" opacity="0.75">?</text>
+
+  <!-- cherry blossom branch -->
+  <path d="M-5,42 Q70,28 130,42 Q190,55 270,42" stroke="#7a4d3a" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+  <g id="ub">
+    <circle cx="0" cy="-6" r="4.5" fill="url(#unsortBloom)"/>
+    <circle cx="5.7" cy="-1.8" r="4.5" fill="url(#unsortBloom)"/>
+    <circle cx="3.6" cy="5.4" r="4.5" fill="url(#unsortBloom)"/>
+    <circle cx="-3.6" cy="5.4" r="4.5" fill="url(#unsortBloom)"/>
+    <circle cx="-5.7" cy="-1.8" r="4.5" fill="url(#unsortBloom)"/>
+    <circle cx="0" cy="0" r="1.7" fill="url(#unsortCenter)"/>
+  </g>
+  <use href="#ub" transform="translate(28,38)"/>
+  <use href="#ub" transform="translate(72,30) scale(1.1)"/>
+  <use href="#ub" transform="translate(125,42) scale(0.95)"/>
+  <use href="#ub" transform="translate(170,32) scale(1.0)"/>
+  <use href="#ub" transform="translate(225,40) scale(1.05)"/>
+
+  <!-- drifting petals -->
+  <ellipse cx="35" cy="78" rx="3" ry="5" fill="#fbd7df" opacity="0.75" transform="rotate(40 35 78)"/>
+  <ellipse cx="225" cy="80" rx="3" ry="5.5" fill="#f5b4c0" opacity="0.70" transform="rotate(-30 225 80)"/>
+</svg>

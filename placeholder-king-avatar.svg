@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bgSky" cx="50%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="55%" stop-color="#fadce0"/>
+      <stop offset="100%" stop-color="#e8b8c8"/>
+    </radialGradient>
+    <linearGradient id="branch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a4d3a"/>
+      <stop offset="100%" stop-color="#4d2e22"/>
+    </linearGradient>
+    <radialGradient id="petalSoft" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbd7df"/>
+      <stop offset="100%" stop-color="#e08fa5"/>
+    </radialGradient>
+    <radialGradient id="petalCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c47a"/>
+      <stop offset="100%" stop-color="#c47a5a"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="200" height="200" fill="url(#bgSky)"/>
+
+  <!-- distant misty mountain silhouette -->
+  <path d="M0,150 L40,118 L70,138 L110,108 L150,128 L200,112 L200,200 L0,200 Z" fill="#d99bb0" opacity="0.45"/>
+  <path d="M0,165 L50,138 L90,158 L130,128 L170,148 L200,140 L200,200 L0,200 Z" fill="#c47a96" opacity="0.55"/>
+
+  <!-- cherry blossom branch -->
+  <path d="M-5,55 Q40,40 75,55 Q110,68 140,55 Q175,42 210,58"
+        stroke="url(#branch)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M55,55 Q60,75 50,95" stroke="url(#branch)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M115,55 Q125,72 138,92" stroke="url(#branch)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- blossoms (5-petal flowers) -->
+  <g id="blossom">
+    <circle cx="0" cy="-9" r="6" fill="url(#petalSoft)"/>
+    <circle cx="8.5" cy="-3" r="6" fill="url(#petalSoft)"/>
+    <circle cx="5.5" cy="8" r="6" fill="url(#petalSoft)"/>
+    <circle cx="-5.5" cy="8" r="6" fill="url(#petalSoft)"/>
+    <circle cx="-8.5" cy="-3" r="6" fill="url(#petalSoft)"/>
+    <circle cx="0" cy="0" r="2.4" fill="url(#petalCenter)"/>
+  </g>
+  <use href="#blossom" transform="translate(30,52) scale(0.95)"/>
+  <use href="#blossom" transform="translate(60,46) scale(1.15)"/>
+  <use href="#blossom" transform="translate(95,52) scale(0.85)"/>
+  <use href="#blossom" transform="translate(130,46) scale(1.05)"/>
+  <use href="#blossom" transform="translate(165,54) scale(0.9)"/>
+  <use href="#blossom" transform="translate(50,92) scale(0.85)"/>
+  <use href="#blossom" transform="translate(138,92) scale(0.95)"/>
+
+  <!-- falling petals -->
+  <ellipse cx="20" cy="110" rx="5" ry="8" fill="#fbd7df" opacity="0.85" transform="rotate(35 20 110)"/>
+  <ellipse cx="80" cy="130" rx="4" ry="7" fill="#f5b4c0" opacity="0.75" transform="rotate(-22 80 130)"/>
+  <ellipse cx="155" cy="125" rx="5" ry="8" fill="#fbd7df" opacity="0.85" transform="rotate(58 155 125)"/>
+  <ellipse cx="105" cy="160" rx="4" ry="7" fill="#f5b4c0" opacity="0.70" transform="rotate(-40 105 160)"/>
+  <ellipse cx="35" cy="170" rx="5" ry="7.5" fill="#fbd7df" opacity="0.65" transform="rotate(72 35 170)"/>
+  <ellipse cx="175" cy="178" rx="4" ry="6.5" fill="#f5b4c0" opacity="0.60" transform="rotate(15 175 178)"/>
+
+  <!-- subtle decorative arc placeholder text -->
+  <text x="100" y="190" text-anchor="middle"
+        font-family="serif" font-style="italic" font-size="11"
+        fill="#7a3a52" opacity="0.55">— add your king's portrait —</text>
+</svg>

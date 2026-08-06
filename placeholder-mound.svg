@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 140" width="260" height="140" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="moundSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f3"/>
+      <stop offset="50%" stop-color="#fae1d8"/>
+      <stop offset="100%" stop-color="#dec0a8"/>
+    </linearGradient>
+    <radialGradient id="moundBloom" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbe0d4"/>
+      <stop offset="100%" stop-color="#dba086"/>
+    </radialGradient>
+    <radialGradient id="moundCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c47a"/>
+      <stop offset="100%" stop-color="#b86a4a"/>
+    </radialGradient>
+    <linearGradient id="moundEarth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c89870"/>
+      <stop offset="100%" stop-color="#8a623e"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="140" fill="url(#moundSky)"/>
+
+  <!-- distant hills -->
+  <path d="M0,95 L60,72 L130,88 L200,70 L260,80 L260,140 L0,140 Z" fill="#b88a72" opacity="0.45"/>
+
+  <!-- soft mound -->
+  <ellipse cx="130" cy="135" rx="190" ry="50" fill="url(#moundEarth)" opacity="0.85"/>
+  <ellipse cx="130" cy="130" rx="160" ry="32" fill="#a87858" opacity="0.6"/>
+
+  <!-- moss / grass tufts -->
+  <path d="M40,116 Q44,108 48,116 Z" fill="#8aa86c" opacity="0.85"/>
+  <path d="M82,114 Q86,104 90,114 Z" fill="#8aa86c" opacity="0.85"/>
+  <path d="M170,116 Q174,106 178,116 Z" fill="#8aa86c" opacity="0.85"/>
+  <path d="M210,114 Q214,106 218,114 Z" fill="#8aa86c" opacity="0.85"/>
+
+  <!-- blossoms scattered on the mound -->
+  <g id="mb">
+    <circle cx="0" cy="-6" r="4.5" fill="url(#moundBloom)"/>
+    <circle cx="5.7" cy="-1.8" r="4.5" fill="url(#moundBloom)"/>
+    <circle cx="3.6" cy="5.4" r="4.5" fill="url(#moundBloom)"/>
+    <circle cx="-3.6" cy="5.4" r="4.5" fill="url(#moundBloom)"/>
+    <circle cx="-5.7" cy="-1.8" r="4.5" fill="url(#moundBloom)"/>
+    <circle cx="0" cy="0" r="1.7" fill="url(#moundCenter)"/>
+  </g>
+  <use href="#mb" transform="translate(65,108)"/>
+  <use href="#mb" transform="translate(115,103) scale(1.1)"/>
+  <use href="#mb" transform="translate(155,110) scale(0.95)"/>
+  <use href="#mb" transform="translate(200,105) scale(1.05)"/>
+
+  <!-- a small branch curving in -->
+  <path d="M-5,55 Q60,38 130,55 Q200,72 270,55" stroke="#7a4d3a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <use href="#mb" transform="translate(45,50) scale(0.85)"/>
+  <use href="#mb" transform="translate(95,46) scale(1.0)"/>
+  <use href="#mb" transform="translate(155,58) scale(0.9)"/>
+  <use href="#mb" transform="translate(210,50) scale(1.05)"/>
+</svg>

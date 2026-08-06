@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 140" width="260" height="140" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nestSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="55%" stop-color="#fbe1ea"/>
+      <stop offset="100%" stop-color="#e89aad"/>
+    </linearGradient>
+    <radialGradient id="nestBloom" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbd7df"/>
+      <stop offset="100%" stop-color="#e08fa5"/>
+    </radialGradient>
+    <radialGradient id="nestCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c47a"/>
+      <stop offset="100%" stop-color="#b86a4a"/>
+    </radialGradient>
+    <radialGradient id="egg" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4b9c4"/>
+    </radialGradient>
+  </defs>
+  <rect width="260" height="140" fill="url(#nestSky)"/>
+
+  <!-- woven nest base (curved layered lines) -->
+  <ellipse cx="130" cy="115" rx="105" ry="32" fill="#a87858" opacity="0.55"/>
+  <path d="M30,118 Q130,90 230,118" stroke="#7a4d3a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M38,124 Q130,98 222,124" stroke="#7a4d3a" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M50,130 Q130,108 210,130" stroke="#7a4d3a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- two small "eggs" with pink hue -->
+  <ellipse cx="108" cy="110" rx="14" ry="18" fill="url(#egg)"/>
+  <ellipse cx="138" cy="108" rx="14" ry="18" fill="url(#egg)"/>
+  <ellipse cx="158" cy="113" rx="11" ry="14" fill="url(#egg)" opacity="0.92"/>
+
+  <!-- subtle spots on eggs -->
+  <circle cx="105" cy="105" r="1.5" fill="#c47a96" opacity="0.6"/>
+  <circle cx="112" cy="115" r="1.2" fill="#c47a96" opacity="0.6"/>
+  <circle cx="140" cy="104" r="1.4" fill="#c47a96" opacity="0.6"/>
+  <circle cx="135" cy="114" r="1.3" fill="#c47a96" opacity="0.6"/>
+  <circle cx="160" cy="115" r="1.1" fill="#c47a96" opacity="0.6"/>
+
+  <!-- cherry blossom branch arching overhead -->
+  <path d="M-5,45 Q60,28 130,45 Q200,62 270,45" stroke="#7a4d3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <g id="nb">
+    <circle cx="0" cy="-6" r="4.5" fill="url(#nestBloom)"/>
+    <circle cx="5.7" cy="-1.8" r="4.5" fill="url(#nestBloom)"/>
+    <circle cx="3.6" cy="5.4" r="4.5" fill="url(#nestBloom)"/>
+    <circle cx="-3.6" cy="5.4" r="4.5" fill="url(#nestBloom)"/>
+    <circle cx="-5.7" cy="-1.8" r="4.5" fill="url(#nestBloom)"/>
+    <circle cx="0" cy="0" r="1.7" fill="url(#nestCenter)"/>
+  </g>
+  <use href="#nb" transform="translate(25,40) scale(0.95)"/>
+  <use href="#nb" transform="translate(72,32) scale(1.1)"/>
+  <use href="#nb" transform="translate(125,42) scale(0.9)"/>
+  <use href="#nb" transform="translate(178,30) scale(1.05)"/>
+  <use href="#nb" transform="translate(225,40) scale(1.0)"/>
+
+  <!-- gentle drifting petals -->
+  <ellipse cx="55" cy="75" rx="3.5" ry="6" fill="#fbd7df" opacity="0.8" transform="rotate(35 55 75)"/>
+  <ellipse cx="200" cy="80" rx="3" ry="5.5" fill="#f5b4c0" opacity="0.7" transform="rotate(-22 200 80)"/>
+</svg>
