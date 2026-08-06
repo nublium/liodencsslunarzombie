@@ -1254,11 +1254,7 @@ display: block;
 width: 96px;
 height: 96px;
 background:
-    radial-gradient(circle 28px at 50% 14%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 84% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 70% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 30% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 16% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%);
+   url('https://nublium.github.io/liodencssnub/catpagedoll.png') no-repeat bottom center !important;
 background-repeat: no-repeat;
 filter: drop-shadow(0 4px 10px rgba(74, 53, 64, 0.25)); }
 
