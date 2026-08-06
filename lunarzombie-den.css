@@ -570,10 +570,7 @@ border-radius: 50%; }
 img[src*="static.lioden.com/uimages"] {
 border-radius: 50%; }
 
-/* LIODEN LOGO - tinted to match the pinks instead of replaced. if you
-want your own logo image, delete the two rules below and use this instead
-192x120 works best
-
+/* LIODEN LOGO - tinted to match the pinks
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 display: none;}
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
@@ -622,10 +619,6 @@ color: #c46580 !important; }
 	filter: saturate(0%); }
 
 /* EXTRAS - ADD/REMOVE BASED ON COMMISSION */
-
-/* lioden turns every line break in the pasted html into a <br>, which
-opens huge gaps between the boxes and breaks the two column row.
-this kills them off */
 
 .lz-territory br,
 .lz-territory * br,
@@ -1046,8 +1039,7 @@ text-align: right;
 flex: 0 1 auto; }
 .lz-info-value a { color: #c46580 !important; }
 
-/* GOALS CHECKLIST - add class="lz-check-done" to a line to tick it off.
-lioden strips the class off ul tags so this hangs off the box instead */
+/* GOALS CHECKLIST - add class="lz-check-done" to a line to tick it off. */
 
 .lz-box ul {
 list-style: none;
@@ -1090,8 +1082,7 @@ text-decoration-color: rgba(196, 101, 128, 0.6); }
 
 .lz-check-text { flex: 1 1 auto; color: #4a3540; text-align: left; }
 
-/* BANNER LINKS - class gets stripped off a tags, so these are styled
-through the row wrapper instead */
+/* BANNER LINKS */
 
 .lz-banner-row {
 display: flex;
@@ -1183,11 +1174,7 @@ display: block;
 width: 96px;
 height: 96px;
 background:
-    radial-gradient(circle 28px at 50% 14%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 84% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 70% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 30% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
-    radial-gradient(circle 28px at 16% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%);
+    url('https://nublium.github.io/liodencssnub/catpagedoll.png') no-repeat bottom center !important;
 background-repeat: no-repeat;
 filter: drop-shadow(0 4px 10px rgba(74, 53, 64, 0.25)); }
 
