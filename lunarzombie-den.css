@@ -604,19 +604,11 @@ border: none !important; }
 color: #c46580 !important; }
 
 /* MEMBER ONLINE */
-.member-online {
-    background: #8fb085;
+.member-online, .member-offline {
 	border-radius: 50%;
-    width: 40px!important;
-    height: 40px; }
-
-/* MEMBER OFFLINE */
-.member-offline {
-    background: #d9c3cb;
-	border-radius: 50%;
-    width: 40px!important;
-    height: 40px;
-	filter: saturate(0%); }
+    width: 10px !important;
+    height: 10px !important;
+display: inline-block;
 
 /* EXTRAS - ADD/REMOVE BASED ON COMMISSION */
 
