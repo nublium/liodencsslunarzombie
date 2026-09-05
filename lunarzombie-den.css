@@ -609,7 +609,8 @@ background-image: url('https://nublium.github.io/liodencsslunarzombie/placeholde
 img[src*="cave/default"] {
 content: url('https://nublium.github.io/liodencsslunarzombie/placeholder-cave.svg') !important;}
 
-/* LION AND USER AVATAR - round, with a blossom ring */
+/* LION AND USER AVATAR - round, with a blossom ring to match the
+portrait frame up in the den layout */
 
 div#lion_image {
 opacity: 1.0;
@@ -636,7 +637,9 @@ img[src*="static.lioden.com/uimages"]:hover {
 border-color: #e2879c;
 box-shadow: 0 0 0 3px #fff8f6, 0 0 0 4px rgba(232, 192, 104, 0.60), 0 0 16px rgba(226, 135, 156, 0.40); }
 
-/* LIODEN LOGO - tinted to match the pinks instead of replaced
+/* LIODEN LOGO - tinted to match the pinks instead of replaced. if you
+want your own logo image, delete the two rules below and use this instead
+192x120 works best
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 display: none;}
@@ -670,7 +673,8 @@ border: none !important; }
 .footer.white a {
 color: #c46580 !important; }
 
-/* MEMBER ONLINE / OFFLINE */
+/* MEMBER ONLINE / OFFLINE - these are the little dots next to usernames.
+lioden draws them at 10px, keep them near that or they swallow the name */
 
 .member-online, .member-offline {
 	border-radius: 50%;
@@ -782,8 +786,7 @@ letter-spacing: 12px;
 margin: 2px 0 6px;
 opacity: 0.78; }
 
-/* KING PORTRAIT - the image itself lives in the html, swap the src there.
-200x200 is the size it displays at */
+/* KING PORTRAIT */
 
 @keyframes lz-glow {
 0%, 100% { box-shadow: 0 0 0 4px #fff8f6, 0 0 0 6px rgba(232, 168, 184, 0.60), 0 0 30px rgba(226, 135, 156, 0.35); }
@@ -1153,8 +1156,7 @@ text-decoration-color: rgba(196, 101, 128, 0.6); }
 
 .lz-check-text { flex: 1 1 auto; color: #4a3540; text-align: left; }
 
-/* BANNER LINKS - class gets stripped off a tags, so these are styled
-through the row wrapper instead */
+/* BANNER LINKS */
 
 .lz-banner-row {
 display: flex;
@@ -1246,7 +1248,11 @@ display: block;
 width: 96px;
 height: 96px;
 background:
-   url('https://nublium.github.io/liodencssnub/catpagedoll.png') no-repeat bottom center !important;
+    radial-gradient(circle 28px at 50% 14%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
+    radial-gradient(circle 28px at 84% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
+    radial-gradient(circle 28px at 70% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
+    radial-gradient(circle 28px at 30% 84%, #ffffff 0%, #fbd7df 55%, #e2879c 100%),
+    radial-gradient(circle 28px at 16% 38%, #ffffff 0%, #fbd7df 55%, #e2879c 100%);
 background-repeat: no-repeat;
 filter: drop-shadow(0 4px 10px rgba(74, 53, 64, 0.25)); }
 
